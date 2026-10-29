@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111019">
+<title>COINS TIKTOK</title>
+<style>
+:root{--bg:#0d0b14;--panel:#171421;--panel2:#211b30;--text:#f8f6ff;--muted:#aaa4bc;--accent:#a855f7;--accent2:#ec4899;--line:#30283f;--green:#42d392}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#241238 0,#0d0b14 52%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+a{color:inherit}button,input{font:inherit}button{cursor:pointer}.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:#0d0b14eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px}.language-picker{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:10px;padding:5px 7px;background:var(--panel);color:var(--text);flex:0 0 auto}.language-picker select{max-width:105px;border:0;outline:0;background:transparent;color:inherit;font:inherit;font-size:12px;font-weight:750;padding:3px;cursor:pointer}.language-picker option{color:#111;background:#fff}.secure-label{color:#42d392;font-size:13px;font-weight:750;white-space:nowrap;display:flex;align-items:center;gap:7px}.secure-shield{width:20px;height:20px;display:block;flex:0 0 auto}.brand{font-size:19px;font-weight:850;letter-spacing:-.5px;text-decoration:none;display:flex;align-items:center;gap:10px}.coin{display:inline-grid;place-items:center;width:35px;height:35px;flex:0 0 35px;background:transparent;border:0;box-shadow:none;color:inherit}.coin svg{width:35px;height:35px;display:block}.navlinks{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.navlinks button,.secondary{background:transparent;border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:12px}.navlinks button:hover,.secondary:hover{border-color:var(--accent)}
+main{padding:34px 0 60px}.hero{padding:28px 0 26px;text-align:center}.eyebrow{color:#d8b4fe;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(30px,6vw,48px);letter-spacing:-1.5px;margin:12px 0}.hero p{color:var(--muted);max-width:570px;margin:0 auto;line-height:1.6}
+.balancebar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;background:linear-gradient(110deg,#241438,#171421);border:1px solid #49335f;border-radius:18px;padding:18px 20px;margin:10px 0 26px}.balance-label{font-size:13px;color:var(--muted)}.balance-number{font-size:25px;font-weight:850;margin-top:3px}.small{font-size:12px;color:var(--muted);line-height:1.5}
+.section-title{font-size:20px;margin:28px 0 14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{position:relative;background:linear-gradient(155deg,#1b1727,#14111d);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;min-height:240px;overflow:hidden}.card.free{border-color:#8b5cf6;background:linear-gradient(155deg,#2c1744,#171421)}.card.popular{border-color:#20ddb0;box-shadow:0 0 0 1px rgba(32,221,176,.18),0 10px 28px rgba(32,221,176,.08);transform:translateY(-3px)}.card.popular .tag{background:#20ddb0;color:#08291f;font-weight:800}.card.free .tag{background:#8b5cf6;color:#fff;font-weight:800}.tag{align-self:flex-start;border-radius:99px;padding:5px 9px;background:#3b2452;color:#e9d5ff;font-size:11px;font-weight:800;letter-spacing:.3px}.card h2{font-size:25px;margin:18px 0 4px;letter-spacing:-.5px}.qty{font-size:13px;color:var(--muted)}.price{font-size:27px;font-weight:850;margin:20px 0 17px}.price span{font-size:13px;font-weight:500;color:var(--muted)}.btn{width:100%;border:0;border-radius:12px;padding:13px 14px;font-weight:800;color:#fff;background:linear-gradient(100deg,var(--accent),var(--accent2));text-decoration:none;text-align:center;display:inline-flex;justify-content:center;align-items:center;gap:7px}.btn:hover{filter:brightness(1.08)}.btn.freebtn{background:linear-gradient(100deg,#7c3aed,#a855f7)}.btn:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #e9d5ff;outline-offset:2px}.card .small{margin-top:auto;padding-top:12px}.panel{background:#171421;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:18px}.panel h2{margin:0 0 9px}.page{display:none}.page.active{display:block}.form{max-width:460px;margin:28px auto}.form label{display:block;font-size:13px;color:#d5cee4;margin:14px 0 6px}.form input{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#0f0d16;color:var(--text)}
+/* Garante que os campos do formulário recebam os toques no celular. */
+.form,.form form,.form label,.form input,.form button{position:relative;z-index:1;pointer-events:auto}
+.form input{display:block;touch-action:manipulation;opacity:1;visibility:visible}.form .btn{margin-top:18px}.form p{color:var(--muted);font-size:13px;line-height:1.6}.textlink{border:0;background:none;color:#d8b4fe;text-decoration:underline;padding:8px 0}.notice{padding:13px 15px;background:#201b2d;border:1px solid #403452;border-radius:12px;color:#d6cce8;font-size:13px;line-height:1.55;margin-top:16px}.refbox{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.refbox input{flex:1;min-width:180px;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0f0d16;color:var(--text)}.qr-wrap img{max-width:100%;height:auto;image-rendering:pixelated}.hidden{display:none!important}footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:12px;line-height:1.6}.footerlinks{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}.footerlinks button{background:none;border:0;color:#d8b4fe;padding:0}
+
+.social-login{display:grid;gap:10px;margin:18px 0}
+.social-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;color:#202124;font-weight:750}
+.social-btn.facebook{background:#1877f2;color:#fff;border-color:#1877f2}
+.social-icon{display:inline-grid;place-items:center;width:23px;height:23px;font-weight:900;font-size:18px}
+.social-btn.facebook .social-icon{font-family:Arial,sans-serif;font-size:22px}
+.login-divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:12px;margin:20px 0}
+.login-divider:before,.login-divider:after{content:"";height:1px;background:var(--line);flex:1}
+@media(max-width:760px){.secure-label{margin-left:auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:17px;min-height:225px}.nav{position:relative;padding:12px 0;align-items:center;flex-direction:row;flex-wrap:wrap;gap:10px}.brand{font-size:17px;gap:6px;max-width:calc(100% - 92px);white-space:nowrap}.brand .coin,.brand .coin svg{width:30px;height:30px;flex-basis:30px}.language-picker{position:absolute;right:0;top:8px;transform:scale(.68);transform-origin:top right;padding:3px 4px;gap:2px}.language-picker select{font-size:10px;max-width:75px;padding:2px}.secure-label{font-size:10px;white-space:normal}.navlinks{width:100%}.navlinks button{flex:1}.hero{padding-top:20px}}
+@media(max-width:470px){.coin-amount-icon{width:44px;height:44px;vertical-align:-10px}.balance-number .coin-amount-icon{width:44px;height:44px;vertical-align:-10px}.secure-label{font-size:11px}.grid{grid-template-columns:1fr}.card{min-height:0}.card h2{margin-top:14px}.price{margin:14px 0}.balancebar{padding:16px}.navlinks button{padding:9px 10px;font-size:13px}}
+
+
+
+.coin-amount-icon{width:44px;height:44px;object-fit:contain;vertical-align:-10px;margin-right:6px;display:inline-block}
+.balance-number .coin-amount-icon{width:44px;height:44px;vertical-align:-10px}
+
+
+.auth-choice{max-width:480px;margin:30px auto;text-align:center;padding:28px}
+.auth-choice h1{font-size:clamp(25px,5vw,36px);margin:0 0 10px}
+.auth-choice p{color:var(--muted);line-height:1.6}
+.auth-actions{display:grid;gap:12px;margin:24px 0 18px}
+.auth-actions .btn,.auth-actions .secondary{width:100%;min-height:48px;font-size:16px;font-weight:800;cursor:pointer}
+.secure-meter{margin:20px 0 0;padding:13px;border:1px solid rgba(66,211,146,.35);border-radius:14px;background:rgba(16,185,129,.08);text-align:left}
+.secure-meter-head{display:flex;align-items:center;gap:9px;color:#42d392;font-weight:800}
+.secure-percent{display:block;margin:5px 0 0 32px;color:#42d392;font-size:20px;font-weight:900;line-height:1.1}
+.secure-meter svg{width:23px;height:23px;flex:0 0 auto}
+.secure-track{height:7px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin:11px 0 7px}
+.secure-track span{display:block;width:100%;height:100%;background:#42d392;border-radius:99px}
+.secure-caption{font-size:11px;color:var(--muted);line-height:1.45}
+.top-account-name{display:none;color:#fff;font-size:13px;font-weight:800;white-space:nowrap;padding:7px 10px;border:1px solid rgba(66,211,146,.35);border-radius:999px}.top-account-name.visible{display:block}
+
+.header-mini-actions{display:flex;gap:6px;align-items:center;flex-wrap:nowrap}
+.header-mini-link{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:6px 10px!important;background:#0d0b14!important;border:1px solid #382b49!important;border-radius:9px!important;color:#f5f0fa!important;font-size:11px!important;font-weight:700;text-decoration:none;white-space:nowrap;cursor:pointer}
+.header-mini-link:hover{border-color:#9b5de5!important}
+.top-account-name{font-size:11px!important;padding:5px 8px!important;border-radius:8px!important;background:#111!important;max-width:130px;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:520px){header .nav{gap:7px;flex-wrap:wrap}.header-mini-actions{width:100%;justify-content:flex-start;margin-top:5px}.header-mini-link{min-height:31px;font-size:10px!important;padding:5px 8px!important}}
+
+</style>
+
+<style>
+.user-confirmation-badge{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:max-content;max-width:100%;margin:0 auto 14px auto;
+  padding:8px 13px;border:1px solid #39313f;border-radius:8px;
+  background:#111;color:#fff;font-size:14px;font-weight:700;
+}
+.user-confirmation-check{
+  display:inline-grid;place-items:center;width:19px;height:19px;
+  border-radius:50%;background:#168b68;color:#fff;font-size:13px;
+}
+</style>
+
+</head>
+<body>
+<style>
+.trust-strip{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px 0 4px;background:transparent;color:#b7f7df;font-size:12px;font-weight:700}
+.trust-item{display:flex;align-items:center;gap:6px;background:rgba(16,185,129,.10);border:1px solid rgba(110,231,183,.28);border-radius:999px;padding:7px 10px}
+.trust-check{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#168b68;color:#fff;font-size:12px}
+</style>
+
+
+<header><div class="wrap nav">
+<a class="brand" href="#loja" aria-label="Ir para loja"><span class="coin" aria-label="TikTok"><svg viewBox="0 0 40 40" role="img" aria-hidden="true"><path d="M23 5v19.2a8.2 8.2 0 1 1-7-8.1v5.8a2.7 2.7 0 1 0 1.5 2.4V5h5.5c.6 4.2 3.1 6.8 7.2 7.6v5.6c-2.8-.3-5.2-1.3-7.2-3.1V5Z" fill="#25F4EE" transform="translate(-2 1)"/><path d="M23 5v19.2a8.2 8.2 0 1 1-7-8.1v5.8a2.7 2.7 0 1 0 1.5 2.4V5h5.5c.6 4.2 3.1 6.8 7.2 7.6v5.6c-2.8-.3-5.2-1.3-7.2-3.1V5Z" fill="#FE2C55" transform="translate(1 0)"/><path d="M23 5v19.2a8.2 8.2 0 1 1-7-8.1v5.8a2.7 2.7 0 1 0 1.5 2.4V5h5.5c.6 4.2 3.1 6.8 7.2 7.6v5.6c-2.8-.3-5.2-1.3-7.2-3.1V5Z" fill="#fff"/></svg></span> COINS <span style="color:#42d392">TIKTOK</span></a><div id="topAccountName" class="top-account-name" aria-live="polite" aria-label="Usuário informado"></div><label class="language-picker" aria-label="Selecionar país e idioma"><span aria-hidden="true">🌐</span><select id="countryLanguage" aria-label="País e idioma" onchange="changeCountryLanguage(this)"><option value="BR-PT" selected>🇧🇷 BR · PT</option><option value="US-EN">🇺🇸 US · EN</option><option value="ES-ES">🇪🇸 ES · ES</option><option value="FR-FR">🇫🇷 FR · FR</option></select></label><div class="secure-label" aria-label="Pagamento seguro"><svg class="secure-shield" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.2 20 5.3v5.8c0 5.1-3.4 8.8-8 10.7-4.6-1.9-8-5.6-8-10.7V5.3L12 2.2Z" fill="currentColor"/><path d="m8.1 11.9 2.5 2.5 5.3-5.5" fill="none" stroke="#0d0b14" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pagamento seguro</span><span aria-hidden="true">›</span></div>
+<nav class="navlinks header-mini-actions" aria-label="Ações">
+<a class="header-mini-link" href="https://www.tiktok.com/@tiktok?_r=1&_t=ZS-9AyG8ZjvAXu" target="_blank" rel="noopener noreferrer">Rede social oficial ↗</a>
+<button class="header-mini-link" type="button" onclick="headerUsernameLogin()">Entrar com @</button>
+</nav></div></header>
+
+<main class="wrap">
+<section id="acesso" class="page">
+ <div class="panel auth-choice">
+  <div class="eyebrow">Bem-vindo à COINS TIKTOK</div>
+  <h1>Entre para continuar</h1>
+  <p>Crie sua conta ou entre com seu usuário para acessar as opções da loja.</p>
+  <div class="auth-actions">
+   <button class="btn" type="button" onclick="go('cadastro')">Criar conta</button>
+   <button class="secondary" type="button" onclick="go('entrar')">Já tenho conta · Entrar</button>
+  </div>
+  <div class="secure-meter" aria-label="Indicador visual de segurança">
+   <div class="secure-meter-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 20 5v6c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5l8-3Z" fill="currentColor"/><path d="m8 12 2.5 2.5L16 9" fill="none" stroke="#102018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Indicador de segurança</span></div>
+   <strong class="secure-percent">100%</strong>
+   <div class="secure-track" role="img" aria-label="Barra visual completa"><span></span></div>
+   <div class="secure-caption">Indicador visual da interface. A segurança real depende da configuração do serviço de autenticação e da proteção dos dados.</div>
+  </div>
+ </div>
+</section>
+
+<section id="loja" class="page active">
+<div class="hero"><div class="eyebrow">Recarga segura • Moedas virtuais</div><h1>Escolha seu pacote</h1><p>Adicione moedas à sua conta e acompanhe suas compras em um só lugar.</p>
+<div class="trust-strip" aria-label="Informações de segurança">
+  <div class="trust-item"><span class="trust-check">✓</span> Confira os dados antes de pagar</div>
+  <div class="trust-item"><span class="trust-check">✓</span> Confirme seu pedido</div>
+  <div class="trust-item"><span class="trust-check">✓</span> Segurança em primeiro lugar</div>
+</div></div>
+
+<div class="user-confirmation-badge" role="note">
+  <span class="user-confirmation-check" aria-hidden="true">✓</span>
+  <span>100% Legalizado pelo TIKTOK Brasil</span>
+</div>
+<h2 class="section-title">Pacotes disponíveis</h2>
+<div class="grid">
